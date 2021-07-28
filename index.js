@@ -34,7 +34,8 @@ function processLine (line) {
       let color = levels[data.level]
       // output = levels[data.level](Object.values(data).join('  '))
       output = [
-        data.timestamp.replace(/^.*T(.*)[Z|+].*/, '$1'),
+        //data.timestamp.replace(/^.*T(.*)[Z|+].*/, '$1'),
+        data.timestamp,
         color(data.level),
         color(data.message),
         JSON.stringify(omit(data, ['timestamp', 'level', 'message']))
