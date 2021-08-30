@@ -2,12 +2,12 @@
   "name": "munia-log-viewer",
   "version": "0.0.0-alpha.1",
   "description": "Command to view json log in simple format",
-  "main": "index.js",
+  "main": "./lib/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "bin": {
-    "mlv": "./index.js"
+    "mlv": "./lib/index.js"
   },
   "keywords": [
     "munia",
@@ -20,6 +20,7 @@
   "dependencies": {
     "chalk": "^4.1.1",
     "lodash.omit": "^4.5.0",
+    "minimist": "^1.2.5",
     "split": "^1.0.1"
   }
 }
