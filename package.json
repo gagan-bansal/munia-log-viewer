@@ -1,6 +1,6 @@
 {
   "name": "munia-log-viewer",
-  "version": "0.0.0-alpha.2",
+  "version": "0.0.0-alpha.3",
   "description": "Command to view json log in simple format",
   "main": "./lib/index.js",
   "scripts": {
