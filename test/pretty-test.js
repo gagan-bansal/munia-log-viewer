@@ -1,5 +1,4 @@
 const t = require('tap')
-const sinon = require('sinon')
 
 const pretty = require('../lib/pretty.js')
 

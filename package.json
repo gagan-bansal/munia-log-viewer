@@ -4,7 +4,10 @@
   "description": "Command to view json log in simple format",
   "main": "./lib/index.js",
   "scripts": {
-    "test": "tap --no-cov --no-color ./test"
+    "test-cmd": "tap --no-cov ./test/cmd-test.js",
+    "test-pretty": "tap --no-cov --no-color ./test/pretty-test.js",
+    "test": "npm run test-pretty && npm run test-cmd"
+
   },
   "bin": {
     "mlv": "./lib/index.js"
@@ -23,12 +26,13 @@
     "lodash": "^4.17.21",
     "lodash.omit": "^4.5.0",
     "minimist": "^1.2.5",
-    "object-path": "^0.11.7",
+    "object-path": "^0.11.8",
     "split": "^1.0.1",
     "string-argv": "^0.3.1"
   },
   "devDependencies": {
-    "sinon": "^11.1.2",
-    "tap": "^15.0.9"
+    "concat-stream": "^2.0.0",
+    "cross-spawn": "^7.0.3",
+    "tap": "^15.0.10"
   }
 }
