@@ -4,13 +4,12 @@
   "description": "Command to view json log in simple format",
   "main": "./lib/index.js",
   "scripts": {
-    "test-cmd": "tap --no-cov ./test/cmd-test.js",
+    "test-cli": "tap --no-cov ./test/cli-test.js",
     "test-pretty": "tap --no-cov --no-color ./test/pretty-test.js",
-    "test": "npm run test-pretty && npm run test-cmd"
-
+    "test": "npm run test-pretty && npm run test-cli"
   },
   "bin": {
-    "mlv": "./lib/index.js"
+    "munia-pretty-json": "./lib/cli.js"
   },
   "keywords": [
     "munia",
@@ -24,7 +23,6 @@
     "chalk": "^4.1.1",
     "get-value": "^3.0.1",
     "lodash": "^4.17.21",
-    "lodash.omit": "^4.5.0",
     "minimist": "^1.2.5",
     "object-path": "^0.11.8",
     "split": "^1.0.1",

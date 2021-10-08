@@ -6,7 +6,7 @@ const pretty = require('../lib/pretty.js')
 let pj = pretty() // pretty json
 t.equal(
   pj({time:123, level: 'info', message: 'foo'}),
-  "[123] - info - foo",
+  "123 info foo",
   'no options'
 )
 

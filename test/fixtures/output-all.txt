@@ -1,19 +1,19 @@
-[946684800000] - [38;2;176;18;89m[1merror[22m[39m - print error message
-[946684800000] - [38;2;87;64;50m[1mwarn[22m[39m - print warn message
-[946684800000] - [38;2;45;66;165m[1minfo[22m[39m - print info message
+946684800000 [38;2;176;18;89m[1merror[22m[39m print error message
+946684800000 [38;2;87;64;50m[1mwarn[22m[39m print warn message
+946684800000 [38;2;45;66;165m[1minfo[22m[39m print info message
 other log
-[946684800000] - [38;2;9;102;191m[1mverbose[22m[39m - print verbose message
-[946684800000] - [38;2;21;2;244m[1mdebug[22m[39m - print debug message
+946684800000 [38;2;9;102;191m[1mverbose[22m[39m print verbose message
+946684800000 [38;2;21;2;244m[1mdebug[22m[39m print debug message
 system is ready
 error: 
   some error here
-[946684800000] - [38;2;1;232;13m[1mhttp[22m[39m - print http message
-[946684800000] - [38;2;30;162;124m[1msilly[22m[39m - print silly message
-[946684800000] - [38;2;33;217;43m[1mcb_debug[22m[39m - print debug message
-[946684800000] - [38;2;153;115;207m[1mcb_http[22m[39m - print http message
-[946684800000] - [38;2;136;107;51m[1mcb_silly[22m[39m - print silly message
-[946684800000] - [38;2;21;2;244m[1mdebug[22m[39m - print debug message
-[946684800000] - [38;2;21;2;244m[1mdebug[22m[39m - print debug message
-[946684800000] - [38;2;21;2;244m[1mdebug[22m[39m - print debug message
-[946684800000] - [38;2;21;2;244m[1mdebug[22m[39m - print debug message
-[946684800000] - [38;2;21;2;244m[1mdebug[22m[39m - print debug message
+946684800000 [38;2;1;232;13m[1mhttp[22m[39m print http message
+946684800000 [38;2;30;162;124m[1msilly[22m[39m print silly message
+946684800000 [38;2;33;217;43m[1mcb_debug[22m[39m print debug message
+946684800000 [38;2;153;115;207m[1mcb_http[22m[39m print http message
+946684800000 [38;2;136;107;51m[1mcb_silly[22m[39m print silly message
+946684800000 [38;2;21;2;244m[1mdebug[22m[39m print debug message
+946684800000 [38;2;21;2;244m[1mdebug[22m[39m print debug message
+946684800000 [38;2;21;2;244m[1mdebug[22m[39m print debug message
+946684800000 [38;2;21;2;244m[1mdebug[22m[39m print debug message
+946684800000 [38;2;21;2;244m[1mdebug[22m[39m print debug message
