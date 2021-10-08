@@ -16,7 +16,7 @@ const output = fs.readdirSync(path.resolve(__dirname, 'fixtures'))
 
 t.test('default output', async t => {
   let resp = await cmd.execute(cli, [log], {env: {'FORCE_COLOR': 3}})
-  t.equal(resp, output['output-all'])
+  t.equal(resp, output['output-default'])
 })
 
 t.test('output only json records', async t => {
@@ -26,6 +26,18 @@ t.test('output only json records', async t => {
     {env: {'FORCE_COLOR': 3}}
   )
   t.equal(resp, output['output-only-json'])
+})
+
+t.test('output with template', async t => {
+  let resp = await cmd.execute(
+    cli,
+    [
+      log, '-a', false,
+      '-t', '{level -c}: {message}'
+    ],
+    {env: {'FORCE_COLOR': 3}}
+  )
+  t.equal(resp, output['output-with-template'])
 })
 
 t.test('output with context', async t => {
@@ -39,16 +51,4 @@ t.test('output with context', async t => {
     {env: {'FORCE_COLOR': 3}}
   )
   t.equal(resp, output['output-with-context'])
-})
-
-t.test('output with template', async t => {
-  let resp = await cmd.execute(
-    cli,
-    [
-      log, '-a', false,
-      '-t', '{level -c}: {message}'
-    ],
-    {env: {'FORCE_COLOR': 3}}
-  )
-  t.equal(resp, output['output-with-template'])
 })

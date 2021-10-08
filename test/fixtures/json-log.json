@@ -14,7 +14,3 @@ error:
 {"time":946684800000,"level":"cb_silly","message":"print silly message","hostname":"my-machine","hostip":"127.0.0.1","pid":123,"address":{"city":"ranchi"}}
 
 {"time":946684800000,"level":"debug","message":"print debug message","hostname":"my-machine","hostip":"127.0.0.1","pid":123,"address":{"city":"ranchi"},"subLevel":"major"}
-{"time":946684800000,"level":"debug","message":"print debug message","hostname":"my-machine","hostip":"127.0.0.1","pid":123,"address":{"city":"ranchi"},"subLevel":"mid"}
-{"time":946684800000,"level":"debug","message":"print debug message","hostname":"my-machine","hostip":"127.0.0.1","pid":123,"address":{"city":"ranchi"},"subLevel":"major"}
-{"time":946684800000,"level":"debug","message":"print debug message","hostname":"my-machine","hostip":"127.0.0.1","pid":123,"address":{"city":"ranchi"},"subLevel":"minor"}
-{"time":946684800000,"level":"debug","message":"print debug message","hostname":"my-machine","hostip":"127.0.0.1","pid":123,"address":{"city":"ranchi"},"subLevel":"minor"}

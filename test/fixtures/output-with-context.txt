@@ -1,7 +1,7 @@
 ...
-[38;2;9;102;191m[1mverbose[22m[39m: print verbose message
-[38;2;21;2;244m[1mdebug[22m[39m: print debug message
-[38;2;1;232;13m[1mhttp[22m[39m: print http message
-[38;2;30;162;124m[1msilly[22m[39m: print silly message
+[1m[96mverbose[39m[22m: print verbose message
+[1m[94mdebug[39m[22m: print debug message
+[1m[38;2;190;190;190mhttp[39m[22m: print http message
+[1m[95msilly[39m[22m: print silly message
 [38;2;33;217;43m[1mcb_debug[22m[39m: print debug message
 ...
