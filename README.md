@@ -1,5 +1,55 @@
-module.exports = function () {
-  return `
+## munia-pretty-json
+
+**Simple and fast JSON log prettifier**
+
+Convert the JSON log into readable form with command line.
+
+### Installation
+
+```sh
+npm install -g munia-pretty-json
+```
+
+### Example
+
+JSON log records (app-log.json):
+
+```
+{"time":"2021-06-09T02:50:22Z","level":"info","message":"Log for pretty JSON","module":"init","hostip":"192.168.0.138","pid":123}
+{"time":"2021-06-09T03:27:43Z","level":"warn","message":"Here is warning message","module":"send-message","hostip":"192.168.0.138","pid":123}
+```
+
+Run the commond **munia-pretty-json** on shell:
+
+<div style="background:#4d4d4d;color:white;font-family:monospace">
+$ munia-pretty-json app-log.json <br>
+</div><br>
+
+This turns the JSON to:
+
+<div style="background:#4d4d4d;color:white;font-family:monospace">
+2021-06-09T02:50:22Z <b><span style="color:#5F5">  info  <span style="color:#FFF"><span style="font-weight:normal;text-decoration:none;"> Log for pretty JSON<br>
+</span></span></span></b><b><span style="color:#FFF"><span style="font-weight:normal;text-decoration:none;">2021-06-09T03:27:43Z <b><span style="color:#ff8800"> warn <span style="color:#FFF"><span style="font-weight:normal;text-decoration:none;"> Here is warning message
+</span></span></span></b></span></span></b>
+</div><br>
+
+With this tool main feature is template that prettifies easily the JSON. Here is an example of template:
+
+<div style="background:#4d4d4d;color:white;font-family:monospace">
+$ munia-pretty-json  -t  '{module -c} {level} {message}'  app-log.json<br> 
+</div><br>
+
+
+<div style="background:#4d4d4d;color:white;font-family:monospace">
+<span style="color:#6f77aa"><b>init<span style="font-weight:normal;text-decoration:none;"><span style="color:#FFF">  info  Log for pretty JSON <br>
+</span></span></b></span><span style="color:#6f77aa"><b><span style="font-weight:normal;text-decoration:none;"><span style="color:#FFF"><span style="color:#3cce84"><b>send-message<span style="font-weight:normal;text-decoration:none;"><span style="color:#FFF">  warn  Here is warning message
+</span></span></b></span></span></span></b></span>
+</div><br>
+
+
+### Usage
+
+<pre>
   Usage: munia-pretty-json [options] <json-file>
          tail -f <json-file> | munia-pretty-json [options]
          node myapp.js | munia-pretty-json [options]
@@ -46,15 +96,13 @@ module.exports = function () {
     --exclude-keys ..... keys to exclude from 'REST'
                          example: -t '{msg} {REST --exclude-keys=host,version}'
                          Note: option only related to 'REST' key
-`
-  /*
-  Examples:
+</pre>
 
-    $ tail -f json.log | mlv
-    $ node myapp.js | mlv
-    $ mlv json.log
-    $ mlv json.log | less -r
-    --colors ........... list of color value mapping
-                         --colors=error:red,info:green,debug:brightBlue
-   */
-}
+## Testing
+```shell
+npm test
+```
+## License
+
+Licensed under [MIT](./LICENSE).
+
