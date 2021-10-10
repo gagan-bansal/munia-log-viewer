@@ -1,7 +1,7 @@
 {
   "name": "munia-log-viewer",
   "version": "0.0.0-alpha.6",
-  "description": "Command to view json log in simple format",
+  "description": "Convert the JSON log into readable form with command line.",
   "main": "./lib/index.js",
   "scripts": {
     "test-cli": "tap --no-cov ./test/cli-test.js",
@@ -15,7 +15,8 @@
     "munia",
     "json",
     "log",
-    "viewer"
+    "viewer",
+    "pretty"
   ],
   "author": "Gagan Bansal",
   "license": "MIT",

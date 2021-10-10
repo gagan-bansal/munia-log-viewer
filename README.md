@@ -1,7 +1,5 @@
 ## munia-pretty-json
 
-**Simple and fast JSON log prettifier**
-
 Convert the JSON log into readable form with command line.
 
 ### Installation
@@ -30,10 +28,10 @@ This turns the JSON to:
 ![output](output1.png)
 
 
-With this tool main feature is template that prettifies easily the JSON. Here is an example of template:
+With this tool the main feature is **template** that prettifies easily the JSON. Here is an example of template:
 
 ```sh
-$ munia-pretty-json  -t  '{module -c} {level} {message}'  app-log.json<br> 
+$ munia-pretty-json  --template  '{module --color} {level} {message}'  app-log.json<br> 
 ```
 
 ![output](output2.png)
@@ -54,10 +52,9 @@ $ munia-pretty-json  -t  '{module -c} {level} {message}'  app-log.json<br>
                          json property (key) names are used to format the template
                          default template '{time} {level --color} {message}'
     -C, --context ...... print number of lines before and after context
-
     -a, --all .......... print formatted json and non json records if true, default true
                          print only formatted json if false
-    -d, --debug ........ print json parse error message, default false
+    -d, --debug ........ print json parsing error message, default false
     -h, --help ......... help/usage infromation
 
   template options:
@@ -80,8 +77,8 @@ $ munia-pretty-json  -t  '{module -c} {level} {message}'  app-log.json<br>
                          Note: option only related to level key
   Special keys:
 
-    REST ............... print rest of the keys and values as JSON string
-                         (keys which are not part of template)
+    REST ............... print rest of the keys and values as a JSON string
+                         (keys which are not part of the template)
                          example: -t '{level}: {message} {REST}'
     --include-keys ..... keys to include in 'REST'
                          example: -t '{msg} {REST --include-keys=app,pid}'
